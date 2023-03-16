@@ -12,10 +12,10 @@ body{
     width:100%;
 }
 
-#header{
+header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 80px;
     background: #e3e6f3;
     position: sticky;
@@ -29,6 +29,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 #navbar li{
     list-style: none;
@@ -48,11 +49,5 @@ body{
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
-    content:"";
-    width: 30px;
-    height: 2px;
-    background-color: #088178;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
+    border-bottom: 2px solid rebeccapurple;
 }
