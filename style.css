@@ -27,6 +27,14 @@ header{
 a {
     text-decoration:none;
 }
+.logo{
+    font-size: 40px;
+    color: red;
+}
+.logo span{
+    color: green;
+}
+
 #navbar ul{
     display: flex;
     align-items: center;
@@ -53,4 +61,12 @@ a {
 #navbar li a.active::after,
 #navbar li a:hover::after{
     border-bottom: 2px solid rebeccapurple;
+}
+
+/* Landing page */
+.landing-page{
+    background-image: url("img/backgrd.jpeg");
+    width: 100%;
+    height: 80vh;
+
 }
