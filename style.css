@@ -24,7 +24,9 @@ header{
     position: sticky;
     top: 0;
 }
-
+a {
+    text-decoration:none;
+}
 #navbar ul{
     display: flex;
     align-items: center;
@@ -45,6 +47,7 @@ header{
 #navbar li a:hover,
 #navbar li a.active{
     color: #088178;
+    
 
 }
 #navbar li a.active::after,
