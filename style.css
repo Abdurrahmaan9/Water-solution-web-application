@@ -86,7 +86,7 @@ a {
     position: absolute;
     right: 50px;
     padding: 2rem;
-    height: 400px;
+    height: 300px;
     width: 400px;
     margin: 5rem;
 
@@ -100,8 +100,10 @@ a {
     color: black;
 }
 .landing-page div button{
+    margin: 5rem;
     color: white;
-    background-color: blue;
+    background-color: rgb(73, 73, 214);
     border-radius: 20px;
     padding: 1rem 2rem;
+   
 }
