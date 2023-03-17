@@ -119,4 +119,34 @@ a {
     background-color:  rgb(82, 82, 207);
 
 }
+h1{
+    font-size: 40px;
+   
+    color: #222;
+}
+h6{
+    font-size: 20px;
+}
+#feature{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  
+}
 
+#feature .fe-box{
+    width: 380px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    background-color:  rgb(82, 82, 207);
+    
+    
+}
+
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+}
