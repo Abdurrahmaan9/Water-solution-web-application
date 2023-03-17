@@ -23,6 +23,7 @@ header{
     z-index: 999;
     position: sticky;
     top: 0;
+    left: 0;
 }
 a {
     text-decoration:none;
@@ -44,6 +45,7 @@ a {
 #navbar li{
     list-style: none;
     padding: 0 20px;
+    position: relative;
 }
 #navbar li a{
     text-decoration: none;
@@ -55,12 +57,17 @@ a {
 #navbar li a:hover,
 #navbar li a.active{
     color: #088178;
-    
-
 }
+
 #navbar li a.active::after,
 #navbar li a:hover::after{
-    border-bottom: 2px solid rebeccapurple;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
 /* Landing page */
