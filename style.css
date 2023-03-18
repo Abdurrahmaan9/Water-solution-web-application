@@ -113,13 +113,14 @@ a {
     color: black;
     line-height: 1.5rem;
 }
-.landing-page div button{
+.landing-page div a {
     margin: 2rem;
     color: white;
     background-color: rgb(39, 39, 172);
     border-radius: 30px;
     padding: 1rem 1.5rem;
     border: none;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -385,8 +386,8 @@ input[type=text] {
     align-items: center;
 }
 .game-container {
-    width: 70%;
-    height: 450px;
+    width: 50%;
+    height: 470px;
     position: relative;
     border: 2px solid orange;
     margin: 0 auto;
