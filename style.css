@@ -8,6 +8,9 @@
     padding: 0;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     width:100%;
@@ -17,7 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 10px 80px;
     background: #e3e6f3;
     position: sticky;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
@@ -45,7 +48,7 @@ a {
 }
 #navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative;
 }
 #navbar li a{
@@ -76,7 +79,7 @@ a {
     background-image: url("img/backgrd.jpeg");
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -141,6 +144,7 @@ a {
     font-size: 20px;
     margin-bottom: 2%;
     margin-left: 0;
+    text-align: center;
    
 }
 
@@ -164,22 +168,24 @@ a {
 .fe-main
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
     width: 100%;
 }
 
 #feature .fe-box{
-    width: 351px;
+    /* width: 351px; */
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
     border: 1px solid #cce7d0;
     border-radius: 4px;
     background-color:  rgb(76, 76, 224);
-    height: 250px;
-    margin-right: 45px;
+    /* height: 250px; */
+    margin-right: 1rem;
+    line-height: 1.5rem;
     color: beige;
+    box-shadow: #088178;
     
 }
 
@@ -321,11 +327,10 @@ footer {
 #mail{
     background-color: gray;
     height: 40vh;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-items: center;
     align-items: center;
-    margin-left: 10%;
     margin-top: 1%;
     flex-direction: column;
     flex-wrap: wrap;
@@ -362,3 +367,65 @@ input[type=text] {
     color: white;
     background-color: #088178;
   }
+
+#start-btn, #stop-btn {
+    margin: 1rem;
+    color: white;
+    background-color: rgb(39, 39, 172);
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+.game-wrap{
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-container {
+    width: 70%;
+    height: 450px;
+    position: relative;
+    border: 2px solid orange;
+    margin: 0 auto;
+    background-color:hsl(226, 43%, 10%);
+    margin-bottom: 1rem;
+
+}
+
+.bucket {
+    background-image: url("img/bucket.png");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+    /* background-color: white; */
+}
+
+.droplet {
+    background-image: url("img/droplet.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: blue; */
+}
+
+.score {
+    /* width: 100px;
+    height: 50px; */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(39, 39, 172);
+    border-radius: 40px;
+    padding: 1rem 2rem;
+}
