@@ -17,7 +17,7 @@ function startGame() {
     newDroplet.style.left = `${Math.floor(Math.random() * (gameContainer.offsetWidth - 20))}px`;
     gameContainer.appendChild(newDroplet);
     animateDroplet(newDroplet);
-  }, 1500);
+  }, 2000);
 }
 
 function stopGame() {
@@ -43,7 +43,7 @@ function animateDroplet(droplet) {
     } else {
       droplet.style.top = `${droplet.offsetTop + 1}px`;
     }
-  }, 10);
+  }, 25);
 }
 
 document.addEventListener('keydown', (e) => {
